@@ -1,0 +1,6 @@
+{
+  "name": "HelpDesk Pro Enterprise Suite",
+  "description": "Enterprise IT Service Management platform with multi-role workflows, SLA monitoring, ticket lifecycle tracking, and executive reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

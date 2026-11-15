@@ -1,0 +1,235 @@
+---
+name: Precision ITSM
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#45464d'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#76777d'
+  outline-variant: '#c6c6cd'
+  surface-tint: '#565e74'
+  primary: '#000000'
+  on-primary: '#ffffff'
+  primary-container: '#131b2e'
+  on-primary-container: '#7c839b'
+  inverse-primary: '#bec6e0'
+  secondary: '#0051d5'
+  on-secondary: '#ffffff'
+  secondary-container: '#316bf3'
+  on-secondary-container: '#fefcff'
+  tertiary: '#000000'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#25005a'
+  on-tertiary-container: '#9863ff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dae2fd'
+  primary-fixed-dim: '#bec6e0'
+  on-primary-fixed: '#131b2e'
+  on-primary-fixed-variant: '#3f465c'
+  secondary-fixed: '#dbe1ff'
+  secondary-fixed-dim: '#b4c5ff'
+  on-secondary-fixed: '#00174b'
+  on-secondary-fixed-variant: '#003ea8'
+  tertiary-fixed: '#eaddff'
+  tertiary-fixed-dim: '#d2bbff'
+  on-tertiary-fixed: '#25005a'
+  on-tertiary-fixed-variant: '#5a00c6'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 22px
+    letterSpacing: -0.005em
+  body-md:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+    letterSpacing: 0em
+  label-lg:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  label-md:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.02em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 10px
+    fontWeight: '700'
+    lineHeight: 12px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.5rem
+  margin: 1rem
+  margin-desktop: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1.25rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system establishes an ultra-refined, high-density operational platform tailored for enterprise IT teams, systems engineers, and tier 1â€“3 service desks. 
+
+The aesthetic is anchored in Modern Corporate Pragmatism, drawing the analytical clarity of Linear, the structural rigor of Jira Service Management, and the approachability of modern productivity workspaces. It balances strict visual rhythm with micro-level contrast to reduce cognitive strain during high-stress triage and incident management.
+
+Key attributes:
+- **Tone:** Authoritative, calm under pressure, rigorously structured, efficient.
+- **Visual Weight:** Light, neutral framing with sharp, semantic focal points for priority states, SLAs, and assignment queues.
+- **Hierarchy:** Data-first presentation prioritizing rapid visual scanning, tabular legibility, and effortless keyboard navigation.
+
+## Colors
+
+The palette leverages a crisp, cool-slate architecture to allow data-dense dashboards to breathe, using strategic saturated accents strictly for actions, states, and urgencies.
+
+### Core Roles
+- **Primary Canvas & Chrome (`#0F172A`, `#1E293B`):** Governs structural headers, persistent enterprise navigation bars, active drawer accents, and high-emphasis display type.
+- **Accent & Interaction (`#2563EB`, `#1D4ED8`):** Applied exclusively to primary interactive triggers, active breadcrumb trails, row focus rings, and selected workspace states.
+- **Neutral & Structural Framing (`#F8FAFC`, `#F1F5F9`, `#E2E8F0`):** `#F8FAFC` anchors the master view background; `#FFFFFF` provides isolated card clarity; `#E2E8F0` delineates grid dividers, table cells, and input borders.
+
+### Semantic Status Tokens
+Status tokens must always pair their dominant stroke/text token with a tinted background container for effortless peripheral recognition:
+- **Open:** `#2563EB` text on `#EFF6FF` container.
+- **Assigned:** `#7C3AED` text on `#F5F3FF` container.
+- **In Progress:** `#D97706` text on `#FFFBEB` container.
+- **Resolved / Stable:** `#059669` text on `#ECFDF5` container.
+- **Closed / Inactive:** `#64748B` text on `#F1F5F9` container.
+- **Critical / P1 / SLA Breach:** `#DC2626` text on `#FEF2F2` container.
+
+## Typography
+
+The dual-type hierarchy cleanly separates macro-level workspace orientation from micro-level incident telemetry:
+- **Headlines (Plus Jakarta Sans):** Introduces a modern, calibrated geometry for section titles, modal headers, and analytical metrics.
+- **Body & Labels (Inter):** Serves as the high-legibility workhorse for dense ticket descriptions, table data cells, audit trails, and metadata chips.
+
+All ticket references (e.g., `INC-8921`), code traces, and SLA countdowns should inherit monospaced tabular numerals (`font-variant-numeric: tabular-nums`) to prevent alignment jitter during real-time status refreshes.
+
+## Layout & Spacing
+
+The layout operates on a fluid, edge-to-edge multi-panel paradigm configured for high information throughput:
+
+### Structural Grid & Shell
+- **Navigation Shell:** A 64px collapsed (or 240px expanded) fixed-left navigation rail paired with a 48px global utility header.
+- **Main Canvas:** A responsive multi-column layout. In queue and triage views, an optional collapsible secondary pane (360pxâ€“420px width) docks to the right for rapid ticket inspection without navigating away from the stream.
+- **Desktop (â‰¥1280px):** 12-column dynamic grid, `gutter-desktop` (1.5rem), `margin-desktop` (2rem).
+- **Tablet (768px - 1279px):** Inspector pane shifts to a floating slide-over drawer; gutters contract to `1rem`.
+- **Mobile (<768px):** Primary content reflows into a single-column stack. Tables convert to stacked summary cards; margins reduce to `1rem`.
+
+Compact element spacing rhythm maintains high density: use `space-xs` and `space-sm` for internal component padding to maximize above-the-fold telemetry.
+
+## Elevation & Depth
+
+Visual separation relies primarily on sharp, structural 1px borders (`#E2E8F0`) reinforced by whisper-quiet ambient shadows. Heavy dropshadows are explicitly omitted to preserve a clean, professional utility feel.
+
+- **Level 0 (Flat / Canvas):** Applied to the base canvas (`#F8FAFC`). No shadow, no outline.
+- **Level 1 (Card / Table Surface):** Crisp `#FFFFFF` surfaces bounded by a 1px border of `#E2E8F0`, paired with an ambient shadow: `box-shadow: 0 1px 2px 0 rgba(15, 23, 42, 0.04)`.
+- **Level 2 (Dropdowns / Flyout Menus / Popovers):** Elevated surface with a 1px border of `#CBD5E1` and ambient elevation: `box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04)`.
+- **Level 3 (Modals / Slide-Over Inspection Drawers):** High-priority focus overlays with a subtle border tint and deep diffused falloff: `box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.06)`. Accompanied by a 24% dark slate backdrop overlay (`rgba(15, 23, 42, 0.35)`).
+
+## Shapes
+
+The design uses a refined, compact radius profile (Soft / `roundedness: 1`) to preserve an engineered, tool-like precision:
+- **Base Components (Inputs, Table Rows, Buttons, Badges):** 4px border radius (`0.25rem`).
+- **Cards, Filter Bars, and Containers (`rounded-lg`):** 8px border radius (`0.5rem`).
+- **Modal Dialogs & Slide Panels (`rounded-xl`):** 12px border radius (`0.75rem`).
+- **Pill Exception:** SLA countdown badges and user status indicator dots alone may use complete circular rounding (`9999px`) to create clear differentiation against rectilinear tabular data.
+
+## Components
+
+### Buttons
+- **Primary:** Background `#2563EB`, text `#FFFFFF`, hover `#1D4ED8`, focus ring `2px #2563EB` with `2px` white offset. Height 32px (compact) or 36px (standard).
+- **Secondary / Outline:** Background `#FFFFFF`, border 1px solid `#E2E8F0`, text `#334155`, hover background `#F8FAFC`.
+- **Destructive:** Background `#DC2626`, text `#FFFFFF`, hover `#B91C1C`.
+
+### Status Badges & Chips
+- Padding: 2px 6px; typography: `label-sm` uppercase.
+- Built strictly using semantic status tokens (e.g., `#FEF2F2` background with `#DC2626` text and border 1px solid `rgba(220, 38, 38, 0.2)` for P1 incidents).
+
+### SLA Countdown Timers
+- Displayed as a compact pill badge containing a clock glyph and tabular numeric text.
+- Healthy SLA (š™[XZ[š[™ÊNˆ™]]˜[^
+ÍÍ˜
+HÛˆÑŒQQŽX‚‹HØ\›š[™ÈÓH
+Z™[XZ[š[™ÊNˆ[X™\ˆ^
+ÑMÍÌ˜
+HÛˆÑ‘‘‘P˜‚‹Hœ™XXÚYÓNˆ™Y^
+ÑÌŒ˜
+HÛˆÑ‘QŒ‘Œ˜Ú]ÝXH[ÙH[š[X][ÛˆÛˆHXÛÛ‹‚‚ˆÈÈÈ›Ü›H[œ]È	ˆÙ[XÝÂ‹HZYÚÌœ
+YÚY[œÚ]HšXYÙH›Ü›\ÊHÜˆÍœ‚‹H˜XÚÙÜ›Ý[™Ñ‘‘‘‘‘˜\ÛÛYÑL‘NŒÛÜ›™\ˆ˜Y]\È^›ÙK[Y
+ÌŒMÌX
+K‚‹HXÝ]™KÑ›ØÝ\ÙYˆ›Ü™\ˆÌMŒÑP˜ÚYÝÈ\ÌMŒÑP˜‚‚ˆÈÈÈ]HX›\È	ˆ›ÝÜÂ‹HX›HXY\ŽˆÑŽQØ˜XÚÙÜ›Ý[™^X™[[Y
+ÍÍ˜
+K\ÛÛY›ÝÛH›Ü™\ˆ
+ÑL‘NŒ
+KZYÚÍœ‚‹HX›H›ÝÎˆÑ‘‘‘‘‘˜˜XÚÙÜ›Ý[™ZYÚÙ[Y[™ÈLœˆÝ™\ˆÝ]NˆÑŽQØˆÙ[XÝYÝ]NˆÑQ‘‘‘˜Ú]HœÛÛYÌMŒÑP˜YXØÙ[X\šÙ\‹‚‚ˆÈÈÈY]šXÈÔHØ\™Â‹HÚ]HÛÛZ[™\ˆ
+Ñ‘‘‘‘‘˜
+K›Ü™\ˆ\ÑL‘NŒY[™È\™[X‚‹H™X]\™\È[ˆ\\˜Ø\ÙHZXÜ›Ë[X™[
+X™[[Y
+KH›Ûš[X\žH[Y\šXÈÛÝ[
+XY[™K[Ø
+K[™[ˆ[›[™H[H[ÚÝÚ[™È\˜Ù[YÙHÚYÚ][ˆ\™XÝ[Û˜[\œ›ÝË‚‚ˆÈÈÈœ™XYÜ[XœÈ	ˆ˜]šYØ][Û‚‹Hœ™XYÜ[Xˆ˜Z[\Ù\È›ÙK\ÛXÚ]HšYÚÚ]œ›ÛˆÙ\\˜]Üˆ
+ÎMLÐŽ
+KˆXÝ]™H]›ÛY[ˆÌŒMÌX‚‹H[\œš\ÙH˜]šYØ][Ûˆ˜]Ù\ˆ\Ù\È\šÈÛ]HÛ™\È
+ÌŒMÌX
+KÚ]XÝ]™H][\ÈYÚYÚYžHHÝXHÌQLŽLÐ˜˜XÚÙÜ›Ý[™[™ÌMŒÑP˜™\XØ[YÙHÝš\
